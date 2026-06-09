@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LingoVerse - Ultimate Language Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <header>
+      <h1>🌐 LingoVerse Hub</h1>
+      <p>Master vocabulary across cultures seamlessly</p>
+    </header>
+
+    <div class="language-selector">
+      <button class="lang-btn active" onclick="switchLanguage('tamil')">Tamizh (தமிழ்)</button>
+      <button class="lang-btn" onclick="switchLanguage('japanese')">Nihongo (日本語)</button>
+      <button class="lang-btn" onclick="switchLanguage('espanol')">Español (ES)</button>
+    </div>
+
+    <div class="card-wrapper">
+      <div class="flashcard" id="flashcard">
+        <div class="card-inner">
+          <div class="card-front">
+            <span class="badge" id="front-badge">Tamil</span>
+            <h1 id="native-word">வணக்கம்</h1>
+            <p id="phonetic-hint">(Vanakkam)</p>
+          </div>
+          <div class="card-back">
+            <span class="badge English">Meaning</span>
+            <h1 id="english-meaning">Hello / Welcome</h1>
+          </div>
+        </div>
+      </div>
+      <p class="tap-hint">✨ Click card to flip & reveal translation</p>
+    </div>
+
+    <div class="nav-controls">
+      <button id="prev-btn" class="control-btn">◀ Prev</button>
+      <span id="card-progress">1 / 4</span>
+      <button id="next-btn" class="control-btn">Next ▶</button>
+    </div>
+
+    <div class="quiz-container">
+      <h3>🧠 Quick Recall Test</h3>
+      <div class="quiz-card">
+        <p id="question-text">What does "வணக்கம்" mean?</p>
+        <div class="options-grid" id="quiz-options">
+          </div>
+        <div id="quiz-feedback" class="feedback-msg"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
